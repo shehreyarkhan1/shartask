@@ -2,43 +2,62 @@
 <html>
 
 <head>
-    <title>apply the css</title>
-    <style>
-        body {
+    <title>form</title>
 
-            background-color: aquamarine;
-
-        }
-
-        .h3 {
-            background-color: rgb(222, 155, 155);
-            /* margin-block-start: 70px; */
-            font-size: 30px;
-            margin: auto;
-
-        }
-
-        .h4 {
-            background-color: blueviolet;
-            margin: auto;
-            font-size: 20px;
-            font: red;
-        }
-    </style>
+</head>
 
 <body>
-    <h2>linked pages</h2>
-    <a href="index.html"><img src="home.png" height="20px" style="margin-left: 400px;"> </a>
-    <a href="next.html"><img src="next.png" height="20px" style="margin-left: 500px;"></a>
-    <div class="h3">
-        <h3>THE NAME OF ALLAH WHICH IS MOST POWERFULL KINDNESS AND MERCIFUL </h3>
-    </div>
-    <div class="h4">
-        <h3>HELLO HI HOW ARE YOU ARE FINE I HOPE YOU WILL BE FINE </h3>
-    </div>
+    <h2>Registration form</h2>
+    <h3>please enter your information</h3>
+    <form>
+        <label>name</label>
+        <input type="text" id="text" />
+        <br />
+        <br />
+        <label>Email</label>
+        <input type="text" id="Email" />
+        <br />
+        <br />
+        <label>Phone no</label>
+        <input type="text" id="phone" />
+        <br />
+        <br />
+        <label>select gender</label>
+        <br>
+        <br>
+        <input type="radio" id="male" name="gender" checked />
+        <label for="male">male </label>
+        <input type="radio" Id="Female" name="gender" />
+        <label for="female">female</label>
+        <br />
+        <br />
+        <select id="countries" name="countries">
+            <option value="">Pakistan</option>
+            <option value="">Afghanistan</option>
+            <option value="">America</option>
+            <option value="">Netherland</option>
+            <option value="">Sarilanka</option>
+            <option value="">Italy</option>
+            <option value="" selected> Germany</option>
+            <br />
+            <br />
+            <label>select course </label>
+            <br/>
+            <br/>
+            <input type="checkbox" id="English" name="course">
+            <label for="English">English</label>
+            <input type="checkbox" id="Urdu" name="course">
+            <label for="Urdu">Urdu</label>
+            <input type="checkbox" id="pashto" name="course">
+            <label for="pashto">pashto</label>
+            <br />
+            <br />
+            <input type="button" value="cancle" />
+            <br />
+            <br />
+            <input type="button" value="ok" />
 
-
+    </form>
 </body>
-</head>
 
 </html>
