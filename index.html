@@ -2,62 +2,105 @@
 <html>
 
 <head>
-    <title>form</title>
+    <title>form pattern matched</title>
+    <style>
+        .body {
+            margin-left: 400px;
+            margin-top: 100px;
+            background-color: aqua;
+            height: 400px;
+            width: 400px;
+        }
 
+        .margin {
+            margin-left: 30px;
+            margin-top: 40px;
+        }
+    </style>
 </head>
 
 <body>
-    <h2>Registration form</h2>
-    <h3>please enter your information</h3>
-    <form>
-        <label>name</label>
-        <input type="text" id="text" />
-        <br />
-        <br />
-        <label>Email</label>
-        <input type="text" id="Email" />
-        <br />
-        <br />
-        <label>Phone no</label>
-        <input type="text" id="phone" />
-        <br />
-        <br />
-        <label>select gender</label>
-        <br>
-        <br>
-        <input type="radio" id="male" name="gender" checked />
-        <label for="male">male </label>
-        <input type="radio" Id="Female" name="gender" />
-        <label for="female">female</label>
-        <br />
-        <br />
-        <select id="countries" name="countries">
-            <option value="">Pakistan</option>
-            <option value="">Afghanistan</option>
-            <option value="">America</option>
-            <option value="">Netherland</option>
-            <option value="">Sarilanka</option>
-            <option value="">Italy</option>
-            <option value="" selected> Germany</option>
-            <br />
-            <br />
-            <label>select course </label>
-            <br/>
-            <br/>
-            <input type="checkbox" id="English" name="course">
-            <label for="English">English</label>
-            <input type="checkbox" id="Urdu" name="course">
-            <label for="Urdu">Urdu</label>
-            <input type="checkbox" id="pashto" name="course">
-            <label for="pashto">pashto</label>
-            <br />
-            <br />
-            <input type="button" value="cancle" />
-            <br />
-            <br />
-            <input type="button" value="ok" />
+    <div class="body">
+        <div class="margin">
+            <form id="myform">
+                Email:<input type="text" id="email">
+                <br />
+                <br />
+                reg no: <input type="text" id="regno">
+                <br />
+                <br />
+                phone no:<input type="text" id="phoneno">
+                <br />
+                <br />
+                web address:<input type="text" id="web">
+                <br />
+                <br />
+                ip address:<input type="text" id="ip">
+                <br />
+                <br />
+                CNIC:<input type="text" id="cnic">
+                <br />
+                <br />
+                <button type="button" onclick="execute()">execute</button>
+                <br />
+                <br />
+            </form>
+        </div>
+    </div>
+    <script>
+        function execute() {
+            var Email = document.getElementById("email").value;
+            var e = /^\w+@\w+\.\w+$/;
+            if (e.test(Email)) {
+                alert("correct input email");
+            }
+            else {
+                alert("incorrect email");
+            }
+            var regno = document.getElementById("regno").value;
+            var r = /^SU-\d{2}-\d{2}-\d{3}-\d{3}$/;
+            if (r.test(regno)) {
+                alert("correct input");
+            } else {
+                alert("incorrect reg no");
+            }
 
-    </form>
+            var phone = document.getElementById("phoneno").value;
+            var p = /^\d{11}$/;
+            if (p.test(phone)) {
+                alert("correct phone number");
+            }
+            else {
+                alert("incorrect phone number");
+            }
+            var web = document.getElementById("web").value;
+            var w = /^www\.\w+\.com\.pk$/;
+            if (w.test(web)) {
+                alert("matched web address");
+            } else {
+                alert("not matched web address");
+
+            }
+            var ip = document.getElementById("ip").value;
+            var i = /^192\.\d{3}\.[0-9]+\.[0-9]+$/;
+            if (i.test(ip)) {
+                alert("matched IP address");
+            }
+            else {
+                alert("not matched IP address");
+            }
+            var cnic = document.getElementById("cnic").value;
+            var c = /^\d{5}-\d{7}-\d{1}$/;
+            if (c.test(cnic)) {
+                alert("matched CNIC");
+            }
+            else {
+                alert("not matched CNIC");
+            }
+
+        }
+    </script>
+
 </body>
 
 </html>
