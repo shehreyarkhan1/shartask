@@ -2,105 +2,159 @@
 <html>
 
 <head>
-    <title>form pattern matched</title>
+    <title>web page</title>
+    <link rel="stylesheet" href="library/css/bootstrap.css" />
     <style>
-        .body {
-            margin-left: 400px;
-            margin-top: 100px;
-            background-color: aqua;
-            height: 400px;
-            width: 400px;
+        .a {
+
+            background-color: paleturquoise;
         }
 
-        .margin {
-            margin-left: 30px;
-            margin-top: 40px;
+        .b {
+            padding-left: 500px;
+        }
+
+        .c {
+            padding-left: 600px;
         }
     </style>
 </head>
 
 <body>
-    <div class="body">
-        <div class="margin">
-            <form id="myform">
-                Email:<input type="text" id="email">
-                <br />
-                <br />
-                reg no: <input type="text" id="regno">
-                <br />
-                <br />
-                phone no:<input type="text" id="phoneno">
-                <br />
-                <br />
-                web address:<input type="text" id="web">
-                <br />
-                <br />
-                ip address:<input type="text" id="ip">
-                <br />
-                <br />
-                CNIC:<input type="text" id="cnic">
-                <br />
-                <br />
-                <button type="button" onclick="execute()">execute</button>
-                <br />
-                <br />
-            </form>
+    <nav class="navbar navbar-expand-sm bg-warning navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="image1.jpg" height="100" class="image-circle" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="men.html">Dry Fruits</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="women.html">Privacy</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="kids-corner.html">FAQS</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid">
+    </div>
+    <div class="row a">
+        <p>The fruit is play a vital role in the body it give vitamins to human body that the body is then use this
+            vitamins against the pathogens bacteria virus which are harmful for the huaman body so````
+        </p>
+        <img src="images/image2.jpg" width="50px" height="300px">
+        <h3 class="alert alert-warning">Types of fruits availability</h3>
+        <ul>
+            <li>Apple</li>
+            <li>Mango</li>
+            <li>Bana</li>
+            <li>Orange</li>
+            <li>Grap</li>
+            <li>Kiwi</li>
+            <li>Strawberry</li>
+            <li>Lemon</li>
+            <li>Watermelon</li>
+            <li>Plum</li>
+            <li>Apricot</li>
+            <li>Peach</li>
+            <li>Grapefruit</li>
+        </ul>
+        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12 d-grade">
+            <img src="images//New folder/image3.jpg" width="200px" class="img-fluid rounded-circle">
+            <p>APPLE</p>
+        </div>
+        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12 d-grade">
+            <img src="images/New folder/image4.jpg" width="200px" class="img-fluid rounded-circle">
+            <p>appricot</p>
+        </div>
+        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12 d-grade">
+            <img src="images/New folder/image5.jpg" width="200px" class="img-fluid rounded-circle">
+            <p>Kiwi</p>
+        </div>
+        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12 d-grade">
+            <img src="images/New folder/image6.jpg" width="200px" class="img-fluid rounded-circle">
+            <p>Honeydew melon</p>
+        </div>
+        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12 d-grade">
+            <img src="images/New folder/image7.jpg" width="200px" class="img-fluid rounded-circle">
+            <p>Watermelon</p>
+        </div>
+        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12 d-grade">
+            <img src="images/New folder/image8.jpg" width="200px" class="img-fluid rounded-circle">
+            <p>Honeydew melon</p>
+        </div>
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 d-grade">
+            <p class="alert alert-danger">Our service provide all types of fruits we provide service our special
+                members on best discount </p>
         </div>
     </div>
-    <script>
-        function execute() {
-            var Email = document.getElementById("email").value;
-            var e = /^\w+@\w+\.\w+$/;
-            if (e.test(Email)) {
-                alert("correct input email");
-            }
-            else {
-                alert("incorrect email");
-            }
-            var regno = document.getElementById("regno").value;
-            var r = /^SU-\d{2}-\d{2}-\d{3}-\d{3}$/;
-            if (r.test(regno)) {
-                alert("correct input");
-            } else {
-                alert("incorrect reg no");
-            }
+    </div>
+    <div class="container-fluid bg-warning footer">
+        <div class="row">
+            <div class="col-xl-4 col-lg-4 col-sm-4 col-md-4 col-12">
+                <h2>About Company</h2>
 
-            var phone = document.getElementById("phoneno").value;
-            var p = /^\d{11}$/;
-            if (p.test(phone)) {
-                alert("correct phone number");
-            }
-            else {
-                alert("incorrect phone number");
-            }
-            var web = document.getElementById("web").value;
-            var w = /^www\.\w+\.com\.pk$/;
-            if (w.test(web)) {
-                alert("matched web address");
-            } else {
-                alert("not matched web address");
+                <p class="footer-para"><span class="fa fa-map-marker"></span> office address goes here</p>
+                <p class="footer-para"><span class="fa fa-mobile"></span> 0335-9144675</p>
+                <p class="footer-para"><span class="fa fa-at"></span> abcd@gmail.com</p>
 
-            }
-            var ip = document.getElementById("ip").value;
-            var i = /^192\.\d{3}\.[0-9]+\.[0-9]+$/;
-            if (i.test(ip)) {
-                alert("matched IP address");
-            }
-            else {
-                alert("not matched IP address");
-            }
-            var cnic = document.getElementById("cnic").value;
-            var c = /^\d{5}-\d{7}-\d{1}$/;
-            if (c.test(cnic)) {
-                alert("matched CNIC");
-            }
-            else {
-                alert("not matched CNIC");
-            }
+            </div>
 
-        }
-    </script>
+            <div class="col-xl-4 col-lg-4 col-sm-4 col-md-4 col-12">
+                <h2>Important Links</h2>
 
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="men.html">Dry Fruits</a></li>
+                    <li><a href="kids-corner.html">Kids Corner</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="terms.html">Terms And Conditions</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="faqs.html">FAQ's</a></li>
+                </ul>
+
+            </div>
+
+            <div class="col-xl-4 col-lg-4 col-sm-4 col-md-4 col-12">
+                <h2>Get Social</h2>
+
+                <p class="fa fa-facebook-square">
+                    <a href="">facebook</a>
+                </p>
+                <br>
+
+                <p class="fa fa-twitter-square">
+                    <a href="">Twitter</a>
+                </p>
+                <br>
+                <p class="fa fa-linkedin-square">
+                    <a href="">Linkedin</a>
+                </p>
+            </div>
+
+        </div>
+    </div>
 </body>
 
 </html>
